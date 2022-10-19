@@ -13,11 +13,11 @@ fieldset{
     box-sizing: border-box;
     background-color: rgb(164, 191, 191);
 }
+
 fieldset label{
     font-size: 20px;
     padding: 10px;
 }
-
 
 #enviar{
     width: 50%;
@@ -29,22 +29,25 @@ fieldset label{
     margin: 30px;
     margin-left: 25%;
 }
+
 input[type="text"]{
     width: 30ex;
     height: 3ex;
 }
+
 input[type="number"]{
     width: 30ex;
     height: 3ex;
 }
+
 select{
     width: 200px;
 }
+
 textarea{
     resize:vertical;
     width: 99%;
 }
-
 
 .duiYnit, .marcasYmodelos, .anioYplaca{
     display: flex;
