@@ -14,61 +14,88 @@
         <article>
         <form name="frmcar" id="frmcar">
         <fieldset id="fldcar" class="group">
-            <legend><span class="labelgroup">Datos del Registro</span></legend>
-            <span class="labelgroup">Datos de Dueño:</span><br><br>
-            <label for="nameDueno">Nombre:</label>
-            <input type="text" name="nameDueno" id="nameDueno" placeholder="Nombre completo"><br>
+            <h3 class="labelgroup">Datos del Registro</h3>
+
+            <span class="apartados" >Datos de Dueño:</span><br><br>
+        
             
-            <label for="duiDueno">Dui:</label>
-            <input type="text" name="duiDueno" id="duiDueno" placeholder="12345678-9">
-        <br>
-            <label for="nitDueno">Nit:</label>
-            <input type="text" name="nitDueno" id="nitDueno" placeholder="12345678-9"><br>
+            <div class="inputBox">
+                <label>Nombre:</label>
+                <input type="text" id="nameDueno" placeholder="Nombre Completo" class="inputname">
+                
+            </div>
+
+            <br>
+            <div class="duiYnit">
+                <div class="inputBox">
+                    <label>Dui:</label>
+                    <input type="text" id="duiDueno" placeholder="12345678-9">
+                </div>
+      
+                <div class="inputBox">
+                    <label>Nit:</label>
+                    <input type="text" id="nitDueno" placeholder="12345678-9"><br>
+                </div>
+            </div>
             <!--Datos carro-->
             <br>
-            <span class="labelgroup">Datos del Carro:</span><br><br>
-        <label for="selfab">Marca: </label>
+            <span class="apartados">Datos del Carro:</span><br><br>
         
-        <select name="selfab" id="selfab">
-                <option value="Toyota">Toyota</option>
-                <option value="Nissan">Nissan</option>
-                <option value="Hyundai">Hyundai</option>
-                <option value="Volkswagen">Volkswagen</option>
-                <option value="Chevrolet">Chevrolet</option>
-                <option value="Honda">Honda</option>
-                <option value="Mitsubishi">Mitsubishi</option>
-        </select>
+            <div class="marcasYmodelos">
+                <div>
+                    <label for="selfab">Marca: </label>
         
-        <label for="selmod">Modelo: </label>
-        <select name="selmod" id="selmod">
-            <option value="Corolla">Corolla</option>
-            <option value="Echo">Echo</option>
-            <option value="Yaris">Yaris</option>
-            <option value="Avensis">Avensis</option>
-            <option value="Camry">Camry</option>
-            <option value="Land Cruiser">Land Cruiser</option>
-            <option value="4 Runner">4 Runner</option>
-            <option value="Hilux">Hilux</option>
-        </select><br>
+                    <select name="selfab" id="selfab" class="select-css">
+                            <option value="Toyota">Toyota</option>
+                            <option value="Nissan">Nissan</option>
+                            <option value="Hyundai">Hyundai</option>
+                            <option value="Volkswagen">Volkswagen</option>
+                            <option value="Chevrolet">Chevrolet</option>
+                            <option value="Honda">Honda</option>
+                            <option value="Mitsubishi">Mitsubishi</option>
+                    </select>
+                </div>
         
-        <div>
-            <label for="radcolor">Color: </label>
-            <select name="radcolor" id="radcolor" class="select-css">
-                <option value="Blanco">Blanco</option>
-                <option value="Negro">Negro</option>
-                <option value="Gris">Gris</option>
-                <option value="Azul">Azul</option>
-                <option value="Verde">Verde</option>
-                <option value="Rojo">Rojo</option>
-                <option value="Amarillo">Amarillo</option>
-                <option value="Beige">Beige</option>
-            </select>
-        </div>
+                <div>
+                    <label for="selmod">Modelo: </label>
+                    <select name="selmod" id="selmod" class="select-css">
+                        <option value="Corolla">Corolla</option>
+                        <option value="Echo">Echo</option>
+                        <option value="Yaris">Yaris</option>
+                        <option value="Avensis">Avensis</option>
+                        <option value="Camry">Camry</option>
+                        <option value="Land Cruiser">Land Cruiser</option>
+                        <option value="4 Runner">4 Runner</option>
+                        <option value="Hilux">Hilux</option>
+                    </select>
+                </div>
+            </div>
+            <br>
 
-        <label for="txtanio">Año: </label>
-        <input type="number" name="txtanio" placeholder="2014" maxlength="4" /><br>
-        <label for="txtplaca">Placa de vehiculo: </label>
-        <input type="text" name="txtplaca" placeholder="P999999-2012"><br>
+            <div>
+                <label for="selcol">Color: </label>
+                <select name="selcol" id="radcolor" class="select-css">
+                    <option value="Blanco">Blanco</option>
+                    <option value="Negro">Negro</option>
+                    <option value="Gris">Gris</option>
+                    <option value="Azul">Azul</option>
+                    <option value="Verde">Verde</option>
+                    <option value="Rojo">Rojo</option>
+                    <option value="Amarillo">Amarillo</option>
+                    <option value="Beige">Beige</option>
+                </select>
+            </div>
+
+       <div class="anioYplaca">
+        <div>
+            <label for="txtanio">Año: </label>
+            <input type="number" name="txtanio" placeholder="2014" maxlength="4" /><br>
+        </div>
+        <div>
+            <label for="txtanio">Placa de vehiculo: </label>
+            <input type="text" name="txtplaca" placeholder="P999999-2012"><br>
+        </div>
+       </div>
         
 
         <label>Fallas: </label><BR></BR>
