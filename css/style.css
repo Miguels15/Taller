@@ -19,7 +19,7 @@ fieldset label{
 }
 
 
-input[type="button"]{
+#enviar{
     width: 50%;
     background-color: rgb(90, 190, 185);
     color: rgb(37, 40, 233);
@@ -121,7 +121,7 @@ h3{
     width: 400px;
     max-width: 100%; 
     box-sizing: border-box;
-   margin: 20px auto;
+    margin: 20px auto;
     border: 1px solid #aaa;
     box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
     border-radius: .3em;
